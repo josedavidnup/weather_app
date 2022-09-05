@@ -10,7 +10,7 @@ function App() {
   const [cities, setCities] = React.useState([]);
   function onSearch(ciudad) {
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${API_KEY}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${API_KEY}&units=metric`
     )
       .then((response) => response.json())
       .then((recurso) => {
