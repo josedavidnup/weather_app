@@ -1,0 +1,15 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, input {
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --border-color: #ffffff80;
+  --card-bkg-color: #00000080;
+  --btn-bkg-danger: #e63946;
+  --btn-bkg-danger-hover: #7f1019;
+}

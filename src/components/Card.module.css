@@ -1,0 +1,72 @@
+.card {
+    position: relative;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    background-color: var(--card-bkg-color);
+    padding: 0.25rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+
+  .mainCard {
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  .card > section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .button {
+    position: absolute;
+    right: 0.25rem;
+    top: 0.25rem;
+    box-sizing: border-box;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 99999px;
+    color: white;
+    background-color: var(--btn-bkg-danger);
+    border: none;
+    cursor: pointer;
+    transition: background-color 250ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button:hover {
+    background-color: var(--btn-bkg-danger-hover);
+  }
+
+  .name  {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .mainCard > section {
+    align-items: flex-start;
+  }
+
+  .mainCard .button{
+    display: none;
+  }
+
+  .mainCard .name {
+    font-size: 3rem;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .mainCard > section > img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .mainCard > section > .temp {
+    padding-top: 2rem;
+  }
